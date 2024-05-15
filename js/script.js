@@ -13,7 +13,9 @@ const container = document.querySelector(".container"),
     progressBar = container.querySelector(".progress-bar"),
     musicList = container.querySelector(".music-list"),
     moreMusicBtn = container.querySelector("#more-music"),
-    closemoreMusic = container.querySelector("#close");
+    closemoreMusic = container.querySelector("#close"),
+    musicLyric = container.querySelector(".music-desc-div .music-lyric"),
+    musicDesc = container.querySelector(".music-desc-div .music-desc");
 
 
 
@@ -31,7 +33,11 @@ function loadMusic(indexNumb) {
     musicArtist.innerText = allMusic[indexNumb - 1].artist;
     musicImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
     mainAudio.src = `songs/${allMusic[indexNumb - 1].src}.mp3`;
+    musicLyric.innerText = allMusic[indexNumb - 1].lyric;
+    musicDesc.innerText = allMusic[indexNumb - 1].desc;
 }
+
+// load music Desc function
 
 
 // play music function
@@ -55,6 +61,7 @@ function nextMusic() {
     // if musicIndex is greater than array length then musicIndex will be 1 so the first music play
     musicIndex > allMusic.length ? musicIndex = 1 : musicIndex = musicIndex;
     loadMusic(musicIndex);
+    loadMusicDesc(musicIndex)
     playMusic();
     playingSong();
 }
