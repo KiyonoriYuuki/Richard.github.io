@@ -7,7 +7,7 @@
   <title>Music Player | Coding With Nick</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <script defer src="js/app.js"></script>
+  <link rel="stylesheet" href="carousel.css">
 
 </head>
 
@@ -65,15 +65,34 @@
 
 
   </div>
-
-  <div class="music">
-    <p class="music-lyric"></p>
-    <p class="music-desc"></p>
-</div>
+  
+  <div class="music carousel">
+    <button class="carousel__button carousel__button--left">
+      <img src="https://cdn-icons-png.flaticon.com/512/271/271220.png">
+    </button>
+    <div class="carousel__tracker-container">
+      <ul class="">
+        <li class="carousel__slide current-slide">
+          <p class="music-lyric"></p>
+        </li>
+        <li class="carousel__slide">
+          <p class="music-desc"></p>
+        </li>
+      </ul>
+    </div>
+    <button class="carousel__button carousel__button--right">
+      <img src="https://cdn-icons-png.flaticon.com/512/271/271228.png">
+    </button> 
+    <div class="carousel__nav">
+      <button class="carousel__indicator current-slide"></button>
+      <button class="carousel__indicator"></button>
+    </div>
+  </div>
 
 </div>
   <script src="js/music-list.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/carousel.js"></script>
 
 </body>
 

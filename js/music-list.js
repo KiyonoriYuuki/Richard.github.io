@@ -22,7 +22,7 @@ let allMusic = [
         img: "Back To December",
         src: "Back To December",
         lyric: "\"These days, I haven't been sleepin'\nStayin' up playin' back myself leavin'\nWhen your birthday passed and I didn't call\nAnd I think about summer, all the beautiful times\nI watched you laughin' from the passenger's side\nAnd realized I loved you in the fall\n\nAnd then the cold came, the dark days\nWhen fear crept into my mind\nYou gave me all your love and all I gave you was goodbye\n\nSo this is me swallowin' my pride\nStandin' in front of you sayin' I'm sorry for that night\nAnd I go back to December all the time\nIt turns out freedom ain't nothin' but missin' you\nWishin' I'd realized what I had when you were mine\nI'd go back to December, turn around and change my own mind\nI go back to December all the time\"\n\n ─ Taylor Swift",
-        desc: ""
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
         name: "Takeaway",
