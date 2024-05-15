@@ -40,6 +40,11 @@ body{
     
 }
 
+.hidden {
+    opacity: 0;
+    
+}
+
 .animated p{
     color:white;
 }
@@ -61,8 +66,16 @@ body{
   border-radius: 15px;
   background: linear-gradient(#000000 0%, #bb2c33 90%);
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.541);
-   background-blend-mode: screen;
+  background-blend-mode: screen;
+  transition: opacity 0.5s ease;
 }
+
+.music{
+    transition: opacity 0.5s ease;
+}
+
+
+
 .container i{
   cursor: pointer;
 }
@@ -241,14 +254,14 @@ body{
   opacity: 0;
   pointer-events: none;
   left: 0;
-  box-shadow: 0px -5px 10px rgba(0,0,0,0.1);
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
   z-index: 5;
   padding: 15px 30px;
   border-radius: 15px;
   background:
-  linear-gradient(rgba(255, 255, 255, 0.973), transparent),
-  linear-gradient(to top left, rgb(255, 23, 23), transparent),
-  linear-gradient(to top right, rgb(0, 183, 255), transparent);
+  linear-gradient(rgba(0, 0, 0, 0.822), transparent),
+  linear-gradient(to top left, rgb(104, 50, 50), transparent),
+  linear-gradient(to top right, rgba(0, 0, 0, 0.473), transparent);
   background-blend-mode: screen;
   transition: all 0.15s ease-in-out;
 }
@@ -268,8 +281,8 @@ body{
   cursor: pointer;
   padding-bottom: 10px;
   margin-bottom: 5px;
-  color: #000000;
-  border-bottom:  1px solid #e5e5e5;
+  color: #ffffff;
+  border-bottom:  1px solid #ffffff;
 }
 .music-list ul li:last-child{
   border-bottom: 0px;
@@ -288,7 +301,7 @@ ul li .audio-duration{
   display: flex;
   align-items: center;
   font-size: 19px;
-  color: #515c6f;
+  color: #f8f8f8;
 }
 
 .header .row i{
@@ -299,15 +312,15 @@ ul li .audio-duration{
 }
 .header #close{
   font-size: 22px;
-  color: #515c6f;
+  color: #f8f8f8;
 }
 .music-list ul::-webkit-scrollbar{
   width: 0;
 }
 .music-list ul li:hover{
-  color: #0e9fff;
+  color: #ff0e0e;
 }
 ul li.playing{
   pointer-events: none;
-  color: #0e9fff;
+  color: #ff0e0e;
 }

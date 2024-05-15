@@ -1,6 +1,8 @@
 // Coding With Nick
 // Add Tags And Elements
 
+var delayInMilliseconds = 1000; //1 second
+
 const container = document.querySelector(".container"),
     musicImg = container.querySelector(".img-area img"),
     musicName = container.querySelector(".song-details .name"),
@@ -13,10 +15,12 @@ const container = document.querySelector(".container"),
     progressBar = container.querySelector(".progress-bar"),
     musicList = container.querySelector(".music-list"),
     moreMusicBtn = container.querySelector("#more-music"),
-    closemoreMusic = container.querySelector("#close"),
-    musicLyric = container.querySelector(".music-desc-div .music-lyric"),
-    musicDesc = container.querySelector(".music-desc-div .music-desc");
+    closemoreMusic = container.querySelector("#close");
+    
 
+const music = document.querySelector(".music"),
+    musicDesc = music.querySelector(".music-desc"),
+    musicLyric = music.querySelector(".music-lyric");
 
 
 let musicIndex = Math.floor((Math.random() * allMusic.length) + 1);
@@ -61,7 +65,6 @@ function nextMusic() {
     // if musicIndex is greater than array length then musicIndex will be 1 so the first music play
     musicIndex > allMusic.length ? musicIndex = 1 : musicIndex = musicIndex;
     loadMusic(musicIndex);
-    loadMusicDesc(musicIndex)
     playMusic();
     playingSong();
 }
@@ -86,8 +89,16 @@ playpauseBtn.addEventListener("click", () => {
 
 // next music button event
 nextBtn.addEventListener("click", () => {
-    nextMusic();
+    container.classList.toggle("hidden");
+    music.classList.toggle("hidden");
+    setTimeout(function() {
+        nextMusic();
+        container.classList.toggle("hidden");
+        music.classList.toggle("hidden");
+      }, delayInMilliseconds);    
 });
+
+// 5-15-2024 1:41 AM solved transition problem
 
 
 // prev music button event
