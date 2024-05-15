@@ -1,3 +1,17 @@
+.container {
+    width: 360px;
+    height: 700px;
+    padding: 25px 30px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    background: linear-gradient(#000000 0%, #bb2c33 90%);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.541);
+    background-blend-mode: screen;
+    transition: opacity 0.5s ease;
+}
+
+
 .carousel {
     position:relative
 }
@@ -22,11 +36,39 @@
     transition: transform 0.3s ease;
 }
 
-carousel__slide {
-    position:relative;
-    top:0;
-    bottom:0;
-    width:100%;
+.carousel__slide {
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    height: 100%; /* Ensure the slide takes full height */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}
+
+
+.carousel__slide p {
+    margin: 0;
+    padding: 0;
+    white-space: normal; /* Ensures text wraps normally */
+    overflow-y: auto; /* Allows vertical scroll if text is too long */
+    max-height: 90%; /* Constrains the maximum height */
+    text-overflow: ellipsis; /* Adds ellipsis if text is too long */
+    width: 100%; /* Ensure the text container takes full width */
+    text-align: center; /* Center align the text */
+}
+
+.carousel__slide.hidden p {
+    max-height: 150px; /* Restrict the height for the second slide */
+    overflow-y: auto; /* Allows vertical scroll if text is too long */
+}
+
+.carousel__slide:nth-child(2) p {
+    max-height: 600px; /* Restrict the height for the second slide */
+    max-width: 700px; /* Restrict the width for the second slide */
+    overflow-y: auto; /* Allows vertical scroll if text is too long */
+    overflow-x: hidden; /* Prevents horizontal scroll */
 }
 
 .carousel__button {
@@ -70,5 +112,20 @@ carousel__slide {
 }
 
 .carousel__indicator.current-slide{
-    background: rgb(255, 0, 0)
+    background: rgb(255, 0, 0);
+    opacity: 1; /* Show the current slide */
+    z-index: 1; /* Foreground */
+    transform: translateX(0); /* Position in view */
   }
+
+.carousel__slide.previous-slide {
+    transform: translateX(-100%); /* Move out to the left */
+}
+
+.carousel__slide.next-slide {
+    transform: translateX(100%); /* Move out to the right */
+}
+
+.hidden {
+    display:none;
+}
