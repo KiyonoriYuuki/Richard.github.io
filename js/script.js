@@ -210,9 +210,8 @@ for (let i = 0; i < allMusic.length; i++) {
   ulTag.insertAdjacentHTML("beforeend", liTag);
 
   window.onload = function(){
-    let liAudioDurationTag = ulTag.querySelector(`#${allMusic[i].src}`);
-    let liAudioTag = ulTag.querySelector(`.${allMusic[i].src}`);
-  }
+  let liAudioDurationTag = ulTag.querySelector(`#${allMusic[i].src}`);
+  let liAudioTag = ulTag.querySelector(`.${allMusic[i].src}`);
 
   liAudioTag.addEventListener("loadeddata", () => {
     let duration = liAudioTag.duration;
@@ -227,7 +226,7 @@ for (let i = 0; i < allMusic.length; i++) {
     liAudioDurationTag.setAttribute("t-duration", `${totalMin}:${totalSec}`);
   });
 
-}
+}}
 // play particular song from the list on click of li tag
 
 const allLiTags = ulTag.querySelectorAll("li");

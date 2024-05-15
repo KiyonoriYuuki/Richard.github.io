@@ -1,4 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+    .parent {
+        display: flex;
+        column-gap: 30px;
+        justify-content: center; /* Add this line */
+    }
+
+.music-desc {
+    display: grid;
+    place-items:left;
+    text-wrap: wrap;
+    width: 70%;
+}
+
+
+#animate {
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+    animation-fill-mode: none;
+
+    transform: translateX(-100%)
+}
+
+.hidden {
+    display: grid;
+    place-items:center;
+    align-items: center;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show {
+
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -18,8 +68,8 @@ body{
   background: rgb(207, 207, 207);
 }
 .container{
-  width: 350px;
-  height: 650px;
+  width: 360px;
+  height: 700px;
   padding: 25px 30px;
   overflow: hidden;
   position: relative;
@@ -83,7 +133,7 @@ body{
 .song-details .artist{
   font-size: 15px;
   opacity: 0.9;
-  line-height: 35px;
+  line-height: 45px;
 }
 .progress-area{
   height: 6px;

@@ -34,7 +34,7 @@ let allMusic = [
         name: "Someone To Forget - BUSTED by Herobust",
         artist: "ARMNHMR",
         img: "Someone To Forget",
-        src: "Someone To Forget - BUSTED by Herobust"
+        src: "Someone To Forget"
     },
     
     ];
