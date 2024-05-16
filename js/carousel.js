@@ -1,66 +1,35 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const carouselContainer = document.querySelector('.carousel__tracker-container ul');
-    if (!carouselContainer) {
-        console.error("Carousel element not found");
-        return;
-    }
-
-    const slides = Array.from(carouselContainer.children);
+    const carouselContainer = document.querySelector('.carousel__tracker-container');
+    const carouselTrack = carouselContainer.querySelector('ul.carousel__track');
+    const slides = Array.from(carouselTrack.children);
     const nextButton = document.querySelector('.carousel__button--right');
     const prevButton = document.querySelector('.carousel__button--left');
     const navIndicators = document.querySelectorAll('.carousel__indicator');
 
-    // Ensure all slides except the first are hidden initially
-    slides.forEach((slide, index) => {
-        if (index !== 0) {
-            slide.classList.add('hidden');
-        }
-    });
+    let currentIndex = 0;
 
-    const updateSlide = (currentSlide, targetSlide) => {
-        currentSlide.classList.remove('current-slide');
-        targetSlide.classList.add('current-slide');
-        currentSlide.classList.add('hidden');
-        targetSlide.classList.remove('hidden');
+    const updateSlide = (newIndex) => {
+        carouselTrack.style.transform = `translateX(-${newIndex * 100}%)`;
+        slides[currentIndex].classList.remove('current-slide');
+        slides[newIndex].classList.add('current-slide');
+        navIndicators[currentIndex].classList.remove('current-slide');
+        navIndicators[newIndex].classList.add('current-slide');
+        currentIndex = newIndex;
     };
 
-    const updateIndicators = (currentIndicator, targetIndicator) => {
-        currentIndicator.classList.remove('current-slide');
-        targetIndicator.classList.add('current-slide');
-    };
-
-    // Add functionality for next button
     nextButton.addEventListener('click', () => {
-        const currentSlide = carouselContainer.querySelector('.current-slide');
-        const currentIndicator = document.querySelector('.carousel__nav .current-slide');
-        const nextSlide = currentSlide.nextElementSibling || slides[0];
-        const nextIndicator = currentIndicator.nextElementSibling || navIndicators[0];
-
-        updateSlide(currentSlide, nextSlide);
-        updateIndicators(currentIndicator, nextIndicator);
+        const newIndex = (currentIndex + 1) % slides.length;
+        updateSlide(newIndex);
     });
 
-    // Add functionality for previous button
     prevButton.addEventListener('click', () => {
-        const currentSlide = carouselContainer.querySelector('.current-slide');
-        const currentIndicator = document.querySelector('.carousel__nav .current-slide');
-        const prevSlide = currentSlide.previousElementSibling || slides[slides.length - 1];
-        const prevIndicator = currentIndicator.previousElementSibling || navIndicators[navIndicators.length - 1];
-
-        updateSlide(currentSlide, prevSlide);
-        updateIndicators(currentIndicator, prevIndicator);
+        const newIndex = (currentIndex - 1 + slides.length) % slides.length;
+        updateSlide(newIndex);
     });
 
-    // Add functionality for navigation indicators
     navIndicators.forEach((indicator, index) => {
         indicator.addEventListener('click', () => {
-            const currentSlide = carouselContainer.querySelector('.current-slide');
-            const currentIndicator = document.querySelector('.carousel__nav .current-slide');
-            const targetSlide = slides[index];
-            const targetIndicator = navIndicators[index];
-
-            updateSlide(currentSlide, targetSlide);
-            updateIndicators(currentIndicator, targetIndicator);
+            updateSlide(index);
         });
     });
 });

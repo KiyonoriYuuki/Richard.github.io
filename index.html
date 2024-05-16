@@ -8,13 +8,11 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="carousel.css">
-
 </head>
 
 <body>
 <div class="animated">
   <div class="container">
-
     <div class="top-bar">
       <i class="material-icons">favorite_border</i>
       <span>Now Playing</span>
@@ -27,9 +25,7 @@
       <p class="name"></p>
       <p class="artist"></p>
     </div>
-
     <div class="progress-area">
-
       <div class="progress-bar">
         <audio id="main-audio" src=""></audio>
       </div>
@@ -39,7 +35,6 @@
       </div>
       <audio id="main-audio" src=""></audio>
     </div>
-
     <div class="controls">
       <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
       <i id="prev" class="material-icons prev">fast_rewind</i>
@@ -49,7 +44,6 @@
       <i id="next" class="material-icons next">fast_forward</i>
       <i id="more-music" class="material-icons">queue_music</i>
     </div>
-
     <div class="music-list">
       <div class="header">
         <div class="row">
@@ -59,41 +53,35 @@
         <i id="close" class="material-icons">close</i>
       </div>
       <ul>
-       
+        <!-- Music list items will be injected here -->
       </ul>
     </div>
-
-
   </div>
-  
   <div class="music carousel">
     <button class="carousel__button carousel__button--left">
       <img src="https://cdn-icons-png.flaticon.com/512/271/271220.png">
     </button>
     <div class="carousel__tracker-container">
-      <ul class="">
+      <ul class="carousel__track">
         <li class="carousel__slide current-slide">
           <p class="music-lyric"></p>
         </li>
-        <li class="carousel__slide hidden">
+        <li class="carousel__slide">
           <p class="music-desc"></p>
         </li>
       </ul>
     </div>
     <button class="carousel__button carousel__button--right">
       <img src="https://cdn-icons-png.flaticon.com/512/271/271228.png">
-    </button> 
+    </button>
     <div class="carousel__nav">
       <button class="carousel__indicator current-slide"></button>
       <button class="carousel__indicator"></button>
     </div>
   </div>
-
 </div>
-  <script src="js/music-list.js"></script>
-  <script src="js/script.js"></script>
-  <script src="js/carousel.js"></script>
-
+<script src="js/music-list.js"></script>
+<script src="js/script.js"></script>
+<script src="js/carousel.js"></script>
 </body>
-
 </html>

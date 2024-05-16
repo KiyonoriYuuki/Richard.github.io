@@ -11,42 +11,37 @@
     transition: opacity 0.5s ease;
 }
 
-
 .carousel {
-    position:relative
+    position: relative;
+    max-width: 500px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the carousel horizontally */
 }
 
-.carousel ul{
+.carousel ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-.carousel__track-container {
-    height: 100%;
-    position:relative;
-    overflow:hidden;
-
+.carousel__tracker-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
 }
 
 .carousel__track {
-    padding: 0;
-    margin: 0;
-    list-style:none;
-    position:relative;
-    height: 100%;
-    transition: transform 0.3s ease;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
 .carousel__slide {
-    max-width: 100%;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    box-sizing: border-box;
-    height: 100%; /* Ensure the slide takes full height */
+    min-width: 100%;
+    transition: opacity 0.5s ease;
     display: flex;
-    align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Ensure the slide takes full height */
 }
-
 
 .carousel__slide p {
     margin: 0;
@@ -64,68 +59,52 @@
     overflow-y: auto; /* Allows vertical scroll if text is too long */
 }
 
-.carousel__slide:nth-child(2) p {
-    max-height: 600px; /* Restrict the height for the second slide */
-    max-width: 700px; /* Restrict the width for the second slide */
-    overflow-y: auto; /* Allows vertical scroll if text is too long */
-    overflow-x: hidden; /* Prevents horizontal scroll */
-}
-
 .carousel__button {
     transform: translateY(-50%);
-    background:transparent;
-    border:0;
-    cursor:pointer;
-    top:50%;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    top: 50%;
+    z-index: 2; /* Ensure buttons are above other elements */
 }
 
+.carousel__button img {
+    width: 30px;
+    filter: invert(100%);
+}
+
+
 .carousel__button--left {
-    position:absolute;
-    left: -70px;
-    top:50%;
+    position: absolute;
+    left: -60px; /* Adjust as needed */
 }
 
 .carousel__button--right {
     position: absolute;
-    left: 600px;
-    top:50%;
+    right: -60px; /* Adjust as needed */
 }
 
 .carousel__button img {
-    width:30px;
+    width: 30px;
 }
 
 .carousel__nav {
-    display:flex;
-    justify-content:center;
-    position:relative;
+    display: flex;
+    justify-content: center;
+    position: relative;
     padding: 10px 0;
 }
 
 .carousel__indicator {
-    border:0;
-    border-radius:50%;
-    width:8px;
-    height:8px;
-    background: rgba(255,255,255,0.3);
+    border: 0;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.3);
     margin: 0 5px;
 }
 
-.carousel__indicator.current-slide{
+.carousel__indicator.current-slide {
     background: rgb(255, 0, 0);
-    opacity: 1; /* Show the current slide */
-    z-index: 1; /* Foreground */
-    transform: translateX(0); /* Position in view */
-  }
-
-.carousel__slide.previous-slide {
-    transform: translateX(-100%); /* Move out to the left */
-}
-
-.carousel__slide.next-slide {
-    transform: translateX(100%); /* Move out to the right */
-}
-
-.hidden {
-    display:none;
+    opacity: 1;
 }

@@ -103,7 +103,13 @@ nextBtn.addEventListener("click", () => {
 
 // prev music button event
 prevBtn.addEventListener("click", () => {
-    prevMusic();
+    container.classList.toggle("hidden");
+    music.classList.toggle("hidden");
+    setTimeout(function() {
+        prevMusic();
+        container.classList.toggle("hidden");
+        music.classList.toggle("hidden");
+      }, delayInMilliseconds);   
 });
 
 // update progressbar width according to music current time
@@ -181,7 +187,13 @@ mainAudio.addEventListener("ended", () => {
     let getText = repeatBtn.innerText; //getting this tag innerText
     switch (getText) {
         case "repeat":
-            nextMusic(); //calling nect music function
+            container.classList.toggle("hidden");
+            music.classList.toggle("hidden");
+            setTimeout(function() {
+                nextMusic();
+                container.classList.toggle("hidden");
+                music.classList.toggle("hidden");
+              }, delayInMilliseconds);    //calling nect music function
             break;
         case "repeat_one":
             mainAudio.currentTime = 0; //setting audio current time to 0
