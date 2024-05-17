@@ -48,5 +48,223 @@ let allMusic = [
         lyric: "\"Timebomb, tick tock, I'm a ticking timebomb\nGuess I needed a shoulder to cry on\nSaw you tryna put up a firearm, a firearm\n\nI know that we're dying and the days getting colder\nAnd I'm already down, but I fight 'til it's over\nYou were there from the start and I know your love hurts\nA perfect circle, I'm black and purple\n\nI'm overanalyzing your poetry\nWondering if you could say no to me\nIt's heavier than I thought to carry\n...\nSomeone to forget\nJust give me something to forget\n\nAll the things we shoulda said\nAll the voices in my head\nThey get louder and louder\nUntil we're both someone to forget\nSomeone to forget\nUntil we're both someone to forget\"\n\n ─ ARMNHMR",
         desc: ""
     },
+    {
+        name: "back to you",
+        artist: "Alexander Stewart",
+        img: "back to you",
+        src: "back to you",
+        lyric: "\"Drunk nights you were all that I cared for\nAnd that drive taking you to the airport\nWhy did you tell me you'd come back?\nYou ruined dating and going out\nAnd I can't stay in without spiraling out\nThink I'm one drink away from calling you now\n\nAll of the sleepless nights\nScared that I'll never find\nSomeone that loved me and touched me like you\n\nI can't believe that I still want ya\nWhile I'm here in California\nThought by now that I'd be getting over you\n\You broke my heart way back in Augustn\It's been too long, I don't want this\nFeels like everything still leads me back to you\nBack to you\nYou, you\nLeads me back to youn\Back to you\nYou (To you)\nYou (To you)\nLeads me back you\"\n\n ─ Alexander Stewart",
+        desc: ""
+    },
+    {
+        name: "blames on me",
+        artist: "Alexander Stewart",
+        img: "blames-on-me",
+        src: "blames-on-me",
+        lyric: "\"The worst part is you're innocent\nIn all of this, I was just calling quits\n\nYou were giving me all that I could need, I was missing it\nNow I'm all alone, going through our old messages\nAnd I'm getting it\nUsually I'm the one getting burned\nDidn't realize I was hurting you\nOh God, I'm sorry, I put you through hell\nYou tried to love me when I hated myself\nI know it's too late for apologies\nFor all of the mistakes that I didn't see\nThe blame's on me\"\n\n ─ Alexander Stewart",
+        desc: ""
+    },
+    {
+        name: "day i die",
+        artist: "Alexander Stewart",
+        img: "day-i-die",
+        src: "day-i-die",
+        lyric: "\"The grass ain't always greener\nAnd the linings never silver, oh, I'm\n\nI'm terrified that I'll look back in ten years' time\nAnd still be holding on to every single memory\nWhile you're holding somebody who isn't me\nI won't lie, I look for you in strangers' eyes\nIt kills me you don't even care we had to say goodbye\nWhen I know that it'll haunt me 'til the day I die\"\n\n ─ Alexander Stewart",
+        desc: ""
+    },
+    {
+        name: "Don't Go",
+        artist: "Yatta Bandz",
+        img: "Don't Go",
+        src: "Don't Go",
+        lyric: "\"Don't want you to go but I won't beg for you stay\nWanna say what's on my mind but then my heart get in the way\nAnd if I had a chance I don't think I'd take it back\nCause the days I spent with you might bе the best I've еver had\nUh, I just really want your love\nI don't wanna give you up\nI know that I said I was tired of these heartbreak songs but DJ turn this up\nNo one really moves on they just learn to accept it\nThen look for someone to make them feel accepted\nYou don't really love them you don't really trust them\nBut feel like it's better than being rejected\nBut I can't live like that\nAiming for your heart if I miss I'ma spin right back on me no cap\nYou won't admit that you missing me\nYou just gonna put on a act you know that's fact\nI thought that we was in this together I'm putting in all of the work\nI think you a curse the reason I keep getting hurt is because I keep putting you first\n\nI know that we hurting each other I get it but I still don't want you to leave\nAnd I'm tryna be perfect for you but it seem like that's pushing you farther from me\nAnd the fact that you walking away like it's nothing is making it hard to believeMessages hard to receive it's making it harder to breathe\nI don't even know how to grieve\nCause I still don't want you to go bae, no\nBut I know that it's killing you to stay,oh oh\"\n\n ─ Yatta Bandz",
+        desc: ""
+    },
+    {
+        name: "drunk text me",
+        artist: "Lexi Jayde",
+        img: "drunk text me",
+        src: "drunk text me",
+        lyric: "\"lyrics here\"\n\n ─ Arist Name",
+        desc: ""
+    },
+    {
+        name: "Fallin' Again (feat. Tatiana Manaois)",
+        artist: "Yatta Bandz, Tatiana Manaois",
+        img: "fallingagain",
+        src: "Fallin' Again (feat. Tatiana Manaois)",
+        lyric: "\"lyrics here\"\n\n ─ Arist Name",
+        desc: ""
+    },
+    {
+        name: "i wish you cheated",
+        artist: "Alexander Stewart",
+        img: "i wish you cheated",
+        src: "i wish you cheated",
+        lyric: "\"lyrics here\"\n\n ─ Arist Name",
+        desc: ""
+    },
+    {
+        name: "if you only knew",
+        artist: "Alexander Stewart",
+        img: "if you only knew",
+        src: "if you only knew",
+        lyric: "\"lyrics here\"\n\n ─ Arist Name",
+        desc: ""
+    },
+    {
+        name: "knowing you exist",
+        artist: "Alexander Stewart",
+        img: "knowing-you-exist",
+        src: "knowing-you-exist",
+        lyric: "\"lyrics here\"\n\n ─ Arist Name",
+        desc: ""
+    },
+    {
+        name: "Lookalike",
+        artist: "Conan Gray",
+        img: "Lookalike",
+        src: "Lookalike",
+        lyric: "\"lyrics here\"\n\n ─ Arist Name",
+        desc: ""
+    },
+    {
+        name: "Love Hurts (feat. Toosii)",
+        artist: "Lil Tjay, Toosii",
+        img: "Love Hurts",
+        src: "Love Hurts (feat. Toosii)",
+        lyric: "\"lyrics here\"\n\n ─ Arist Name",
+        desc: ""
+    },
+    {
+        name: "Loved You Once",
+        artist: "Clara Mae",
+        img: "Loved You Once",
+        src: "Loved You Once",
+        lyric: "\"lyrics here\"\n\n ─ Arist Name",
+        desc: ""
+    },
+    {
+        name: "Nothing Hurts Like Goodbye (with Kiiara)",
+        artist: "SLANDER, Kiiara",
+        img: "Nothing Hurts Like Goodbye",
+        src: "Nothing Hurts Like Goodbye (with Kiiara)",
+        lyric: "\"lyrics here\"\n\n ─ Arist Name",
+        desc: ""
+    },
+    {
+        name: "something to remember",
+        artist: "Matt Hansen",
+        img: "something to remember",
+        src: "something to remember",
+        lyric: "\"lyrics here\"\n\n ─ Arist Name",
+        desc: ""
+    },
+    {
+        name: "Still Yours (From The Doc)",
+        artist: "The Kid LAROI",
+        img: "Still Yours",
+        src: "Still Yours",
+        lyric: "\"lyrics here\"\n\n ─ Arist Name",
+        desc: ""
+    },
+    {
+        name: "Afterglow",
+        artist: "ARMNHMR, VLCN, Nevve",
+        img: "Afterglow",
+        src: "afterglow",
+        lyric: "\"lyrics here\"\n\n ─ Arist Name",
+        desc: ""
+    },
+    {
+        name: "Anti-Hero - ILLENIUM Remix",
+        artist: "Taylor Swift, ILLENIUM",
+        img: "Anti-Hero",
+        src: "anti-hero",
+        lyric: "\"lyrics here\"\n\n ─ Arist Name",
+        desc: ""
+    },
+    {
+        name: "Crazy for You",
+        artist: "iann dior",
+        img: "crazyforyou",
+        src: "crazyforyou",
+        lyric: "\"lyrics here\"\n\n ─ Arist Name",
+        desc: ""
+    },
+    {
+        name: "Glimpse of Us",
+        artist: "Joji",
+        img: "glimpseofus",
+        src: "glimpseofus",
+        lyric: "\"lyrics here\"\n\n ─ Arist Name",
+        desc: ""
+    },
+    {
+        name: "Keep U Warm",
+        artist: "SLANDER, William BLack, Jordan Shaw",
+        img: "Keep U Warm",
+        src: "keep u warm",
+        lyric: "\"lyrics here\"\n\n ─ Arist Name",
+        desc: ""
+    },
+    {
+        name: "Killing Me",
+        artist: "Dylan Matthew",
+        img: "Killing Me",
+        src: "Killing Me",
+        lyric: "\"lyrics here\"\n\n ─ Arist Name",
+        desc: ""
+    },
+    {
+        name: "Lost (Meant to Be)",
+        artist: "yetep, Casey Cook",
+        img: "Lost",
+        src: "lost",
+        lyric: "\"lyrics here\"\n\n ─ Arist Name",
+        desc: ""
+    },
+    {
+        name: "Me + You - With Love Remix",
+        artist: "SABAI, Rave New World, With Love",
+        img: "Me + You",
+        src: "MeYou",
+        lyric: "\"lyrics here\"\n\n ─ Arist Name",
+        desc: ""
+    },
+    {
+        name: "One That Got Away (with Dylan Matthew)",
+        artist: "Jason Ross, Dabin, Dylan Matthew",
+        img: "One That Got Away",
+        src: "one that got away",
+        lyric: "\"lyrics here\"\n\n ─ Arist Name",
+        desc: ""
+    },
+    {
+        name: "Reminds Me Of You",
+        artist: "Juice WRLD, The Kid LAROI",
+        img: "reminds me of you",
+        src: "reminds me of you",
+        lyric: "\"lyrics here\"\n\n ─ Arist Name",
+        desc: ""
+    },
+    {
+        name: "Stay - Affinity Remix",
+        artist: "William Black, Afinity, Trella",
+        img: "Stay",
+        src: "Stay",
+        lyric: "\"lyrics here\"\n\n ─ Arist Name",
+        desc: ""
+    },
+    {
+        name: "You Don't Even",
+        artist: "Iann Dior",
+        img: "youdonteven",
+        src: "you don't even",
+        lyric: "\"lyrics here\"\n\n ─ Arist Name",
+        desc: ""
+    },
+    
+
     
     ];
