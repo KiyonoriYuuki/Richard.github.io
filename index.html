@@ -8,16 +8,25 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="carousel.css">
+  <link rel="stylesheet" href="essay.html">
+
 </head>
 
 <body>
   <script>
     var password;
     var pass1 = "password";
+    var pass2 = "Barry";
+    var pass3 = "Mei";
+    var pass4 = "Samanda";
+    var pass5 = "Austin";
     password = prompt('Please enter your password to view this page!', '');
     if (password == pass1) {
       alert('Happy Birthday Katy! Click OK to enter!');
-    } else {
+    } else if (password == pass2 || password == pass3 || password == pass4 || password == pass5) {
+      window.location = "essay.html";
+    }
+    else {
       window.location = "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley";
     }
   </script>
