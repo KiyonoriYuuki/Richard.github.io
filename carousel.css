@@ -13,7 +13,7 @@
 
 .carousel {
     position: relative;
-    max-width: 500px; /* Adjust the maximum width as needed */
+    max-width: 600px; /* Adjust the maximum width as needed */
     margin: 0 auto; /* Center the carousel horizontally */
 }
 
@@ -51,7 +51,7 @@
     max-height: 90%; /* Constrains the maximum height */
     text-overflow: ellipsis; /* Adds ellipsis if text is too long */
     width: 100%; /* Ensure the text container takes full width */
-    text-align: center; /* Center align the text */
+    text-align: left; /* Center align the text */
 }
 
 .carousel__slide.hidden p {
